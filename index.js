@@ -29,7 +29,7 @@ const addNewGoal = () => {
     for(let i=0; i<existingGoals.length; i++){
         //check the text that is added on goals against the text in goalInput
         if (existingGoals[i].textContent === goalInput){
-        alert('Goal already exists.'); //alert creates a pop up text box
+        confirm('Goal already exists.'); //alert creates a pop up text box
         return; //exit the function if a duplicate is found to prevent the new goal from being added
         }
     }
